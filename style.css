@@ -1,0 +1,34 @@
+:root {
+  --darkSpace: #25283d;
+  --lightSpace: #e7e7e7;
+  --metallic: #887880;
+  --blackSpace : #211103;
+}
+
+body {
+  width: 390px;
+  font-family: 'Space Grotesk', sans-serif;
+  background-color: var(--blackSpace);
+  color: var(--lightSpace);
+}
+
+.header {
+  background-color: var(--darkSpace);
+  height: 100px;
+  display: flex;
+  gap: 8rem;
+  align-items: center;
+}
+#logo{
+    color: var(--lightSpace);
+}
+a {
+  text-decoration: none;
+  color: var(--lightSpace);
+}
+
+img {
+  width: 350px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
