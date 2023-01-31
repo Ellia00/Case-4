@@ -7,24 +7,37 @@
 fetch("sputnikAPI.json")
     .then((Response) => Response.json())
     .then((data) => {
+        console.log(data)
+        let { items } = data.collection
 
-        let a = data.collection.items
-
-        a.forEach(element => {
+        items.forEach(element => {
             console.log(element.links)
-            return b = element.links
-            // loopa igen
-            
+            let a = [element.links]
 
         });
 
-        b.forEach(element => {
-            console.log(element.href)
-        });
 
 
-        yo.innerHTML = `
-    <img src="${data.collection.items[1].links[0].href}" alt=""> `;
+
+        // a.forEach(element => {
+        //     console.log(element.links[0], "hej hej")
+        //     return b = element.links
+        //     // loopa igen
+
+        // });
+
+        // b.forEach(element => {
+        //     console.log(element.href)
+        // });
+
+
+        yo.innerHTML =
+
+            ` <img src="${data.collection.items[1].links[0].href}" alt=""> `;
+
+
+
+
         // console.log("yeehaaw", data.collection.items[1].links[0].href);
 
 

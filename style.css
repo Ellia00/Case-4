@@ -1,35 +1,64 @@
 :root {
-  --darkSpace: #25283d;
-  --lightSpace: #e7e7e7;
-  --metallic: #887880;
-  --blackSpace: #211103;
+  --darkSpace: #1b263b;
+  --lightSpace: #e0e1dd;
+  --metallic: #415a77;
+  --blackSpace: #0d1b2a;
 }
 
 body {
   width: 390px;
   font-family: "Space Grotesk", sans-serif;
-  background-color: var(--blackSpace);
+  background-color: black;
   color: var(--lightSpace);
+  margin: 0 auto;
 }
 
 .header {
-  background-color: var(--darkSpace);
-  height: 100px;
+  /* background-color: var(--darkSpace); */
+  height: 80px;
   display: flex;
   gap: 6rem;
   align-items: center;
+  background-image: url(assets/space-galaxy-background.jpg);
+  background-size: cover;
+
 }
+
 #logo {
   color: var(--lightSpace);
   margin-left: 1rem;
 }
+
 a {
   text-decoration: none;
   color: var(--lightSpace);
 }
 
-a:hover{
-    text-decoration:underline;
+a:hover {
+  text-decoration: underline;
+}
+
+#landing {
+  padding: 1rem;
+
+}
+
+#heroSection {
+
+  background-color: var(--blackSpace);
+  height: 100vh;
+}
+
+#title {
+  /* padding-top: 1.3rem; */
+  padding-bottom: 1rem;
+  font-size: 1.7rem;
+
+}
+
+#explanation {
+font-size: 0.9rem;
+  padding-top: 1rem;
 }
 
 img {
