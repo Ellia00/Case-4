@@ -9,14 +9,29 @@ fetch("sputnikAPI.json")
     .then((data) => {
         console.log(data)
         let { items } = data.collection
+        console.log(data.collection.items[2].links[0].href)
 
         items.forEach(element => {
-            console.log(element.links)
-            let a = [element.links]
+            // console.log(element.links)
+
+
 
         });
 
+        let a = [data.collection.items]
+        console.log(a)
 
+        for (let i = 0; i < a.length; i++) {
+            const element = a[i];
+            console.log(element)
+
+            for (let x = 0; x < element.length; x++) {
+                const link = element[x];
+                console.log(link.links)
+
+            }
+
+        }
 
 
         // a.forEach(element => {
@@ -34,8 +49,6 @@ fetch("sputnikAPI.json")
         yo.innerHTML =
 
             ` <img src="${data.collection.items[1].links[0].href}" alt=""> `;
-
-
 
 
         // console.log("yeehaaw", data.collection.items[1].links[0].href);
