@@ -13,7 +13,7 @@ searchFormEl.addEventListener("submit", (e) => {
 
     // fetch(`https://images-api.nasa.gov/search?q=${searchString}`)
 
-        fetch("sputnikAPI.json")
+    fetch("sputnikAPI.json")
         .then((Response) => Response.json())
         .then((data) => {
             console.log(data)
@@ -28,9 +28,12 @@ searchFormEl.addEventListener("submit", (e) => {
                 landing.innerHTML += `
 
         <div class="card">
+
+        <div class="border">
             <div class="cardTitle">${element.data[0].title}</div>
             <img src="${element.links?.[0].href}" class ="cardImg"> 
             <div class="cardText">"${element.data[0].description}"</div>
+          </div>         
           </div>         
             `;
             });
