@@ -23,19 +23,28 @@ searchFormEl.addEventListener("submit", (e) => {
             // console.log(data.collection.items[2].links[0].href)
 
             items.forEach(element => {
-                console.log(element.links?.[0].href)
+
+                if (element.hasOwnProperty("links")) {
+
+                    console.log(element.links?.[0].href)
+
+
+                    landing.innerHTML += `
+
+                    <div class="card">
+            
+                    <div class="border">
+                        <div class="cardTitle">${element.data[0].title}</div>
+                        <img src="${element.links?.[0].href}" class ="cardImg"> 
+                        <div class="cardText">"${element.data[0].description}"</div>
+                      </div>         
+                      </div>         
+                        `;
+
+                }
+
                 // kan också loopas med en if sats som kollar om hur lång links är och om den har en nolla i, för alla har inte det, därför den crahsar utan ?
-                landing.innerHTML += `
 
-        <div class="card">
-
-        <div class="border">
-            <div class="cardTitle">${element.data[0].title}</div>
-            <img src="${element.links?.[0].href}" class ="cardImg"> 
-            <div class="cardText">"${element.data[0].description}"</div>
-          </div>         
-          </div>         
-            `;
             });
         });
 })
