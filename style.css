@@ -6,10 +6,20 @@
 }
 
 
-#background-image-stretcher {
+#backgroundImageStretcher {
 
   background-image: url(assets/ivana-cajina-asuyh-_ZX54-unsplash.jpg);
   background-size: cover;
+
+}
+#backgroundImageStretcher2 {
+
+  background-image: url(assets/ivana-cajina-asuyh-_ZX54-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat,repeat;
+  background-position: center;
+  height: 200rem;
+
 
 }
 
@@ -81,33 +91,46 @@ img {
   display: flex;
   gap: 6rem;
   align-items: center;
+  justify-content: center;
   background: rgba(15, 14, 14, 0.9);
   backdrop-filter: blur(2px);
-
+  position: fixed;
+  bottom: 0;
+  width: 390px;
 }
+
 
 
 
 #searchForm {
-  border: 1px solid red;
+  margin-top: 2rem;
   display: flex;
-  gap: 2rem;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 1rem;
+  overflow: hidden;
+
+
 }
 
 #search {
-  flex: 5;
+  flex-grow: 2;
   border-radius: 1rem;
   height: 3rem;
   width: 3rem;
+  position: relative;
+  border: none;
+  padding: 1rem;
 }
 
 button {
-  flex: 1;
-  border-radius: 1rem;
+  position: absolute;
+  right: 0;
+  height: 90%;
+  border: none;
+
 }
-
-
-
 
 
 
@@ -115,19 +138,20 @@ button {
 
 
 .card {
-  border: 1px solid rebeccapurple;
-  background-color: var(--darkSpace);
+  background-color: #0f0e0ecc;
+  /* background-color: var(--darkSpace); */
   margin-top: 2rem;
   border-radius: 2rem;
+  backdrop-filter: blur(2px);
 }
 
 .border {
   margin: 1rem;
-  border: 1px solid red;
 
 }
 
 .cardTitle {
+  padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   font-size: 2rem;
   display: flex;

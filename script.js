@@ -14,7 +14,7 @@ fetch(
     // visa data
     console.log("data", data);
 
-    landing.innerHTML = ` 
+    landing.innerHTML += ` 
         <h1 id="title">${data.title}</h1>
         <img src="${data.url}" alt="">
         <p id ="explanation">${data.explanation}</p>`;
