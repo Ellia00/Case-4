@@ -1,8 +1,5 @@
 :root {
-  --darkSpace: #1b263b;
   --lightSpace: #e0e1dd;
-  --metallic: #415a77;
-  --blackSpace: #0d1b2a;
 }
 
 
@@ -12,10 +9,9 @@
   background-size: cover;
 
 }
+
 #backgroundImageStretcher2 {
-
   background: url(assets/ivana-cajina-asuyh-_ZX54-unsplash.jpg) repeat-y;
-
 }
 
 body {
@@ -24,11 +20,10 @@ body {
   background-color: black;
   color: var(--lightSpace);
   margin: 0 auto;
-  
+
 }
 
 .header {
-  /* background-color: var(--darkSpace); */
   height: 80px;
   display: flex;
   gap: 6rem;
@@ -51,7 +46,7 @@ a:hover {
   text-decoration: underline;
 }
 
-#noData{
+#noData {
   margin-top: 1rem;
   text-align: center;
 }
@@ -68,7 +63,6 @@ a:hover {
 }
 
 #title {
-  /* padding-top: 1.3rem; */
   padding-bottom: 1rem;
   font-size: 1.7rem;
 
@@ -110,7 +104,8 @@ img {
   align-items: center;
   border-radius: 1rem;
   overflow: hidden;
-
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 #search {
@@ -130,16 +125,14 @@ button {
   border: none;
 }
 
-#checkboxes{
-  /* position: absolute; */
-  transform: translate(2rem);
-  background-color: red;
+#checkboxes {
+  border-radius: 2rem;
+  margin-top: 1rem;
+  background-color: #0f0e0ecc;
+  margin-left: 1rem;
+  margin-right: 1rem;
+
 }
-
-
-
-
-
 
 .card {
   background-color: #0f0e0ecc;
