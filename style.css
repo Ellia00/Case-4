@@ -14,12 +14,7 @@
 }
 #backgroundImageStretcher2 {
 
-  background-image: url(assets/ivana-cajina-asuyh-_ZX54-unsplash.jpg);
-  background-size: cover;
-  background-repeat: no-repeat,repeat;
-  background-position: center;
-  height: 200rem;
-
+  background: url(assets/ivana-cajina-asuyh-_ZX54-unsplash.jpg) repeat-y;
 
 }
 
@@ -29,6 +24,7 @@ body {
   background-color: black;
   color: var(--lightSpace);
   margin: 0 auto;
+  
 }
 
 .header {
@@ -55,14 +51,18 @@ a:hover {
   text-decoration: underline;
 }
 
+#noData{
+  margin-top: 1rem;
+  text-align: center;
+}
+
 #landing {
   padding: 1rem;
+  min-height: 100vh;
 
 }
 
 #heroSection {
-  /* background-image: url(assets/ivana-cajina-asuyh-_ZX54-unsplash.jpg);
-  background-size: cover; */
   height: 100%;
 
 }
@@ -111,7 +111,6 @@ img {
   border-radius: 1rem;
   overflow: hidden;
 
-
 }
 
 #search {
@@ -129,7 +128,12 @@ button {
   right: 0;
   height: 90%;
   border: none;
+}
 
+#checkboxes{
+  /* position: absolute; */
+  transform: translate(2rem);
+  background-color: red;
 }
 
 
@@ -139,10 +143,10 @@ button {
 
 .card {
   background-color: #0f0e0ecc;
-  /* background-color: var(--darkSpace); */
   margin-top: 2rem;
   border-radius: 2rem;
   backdrop-filter: blur(2px);
+  padding-bottom: 0.5rem;
 }
 
 .border {
@@ -166,6 +170,5 @@ button {
 .cardText {
   margin-top: 1rem;
   text-align: center;
-  /* max-height: 20rem;
-  overflow: hidden; */
+  overflow: hidden;
 }
